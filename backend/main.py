@@ -33,7 +33,7 @@ CLIENTES_FILE = BASE_DIR / "clientes.json"
 UPLOAD_DIR.mkdir(exist_ok=True)
 OUTPUT_DIR.mkdir(exist_ok=True)
 
-ADMIN_PASSWORD = "estudio2025"
+ADMIN_PASSWORD = "estudio2026"
 
 
 # ══════════════════════════════════════════════════════════════════════════════
