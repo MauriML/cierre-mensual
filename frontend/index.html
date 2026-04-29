@@ -16,7 +16,6 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{font-family:'Outfit',sans-serif;background:var(--papel);color:var(--txt);min-height:100vh}
 
-  /* LOGIN */
   .login-screen{min-height:100vh;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--azul-o),var(--azul),#1a56cc)}
   .login-card{background:white;border-radius:24px;padding:52px 44px;width:400px;box-shadow:0 32px 80px rgba(0,0,0,.3);animation:popIn .5s cubic-bezier(.34,1.56,.64,1)}
   @keyframes popIn{from{opacity:0;transform:scale(.9) translateY(20px)}to{opacity:1;transform:scale(1) translateY(0)}}
@@ -33,7 +32,6 @@
   .btn-login:disabled{opacity:.7;cursor:not-allowed}
   .login-error{background:var(--rs);color:var(--rojo);padding:10px 14px;border-radius:8px;font-size:13px;margin-top:12px;display:none;text-align:center}
 
-  /* APP SHELL */
   .app{display:none}
   .sidebar{position:fixed;left:0;top:0;bottom:0;width:240px;background:var(--azul-o);display:flex;flex-direction:column;z-index:100}
   .sidebar-logo{padding:28px 24px 20px;border-bottom:1px solid rgba(255,255,255,.08)}
@@ -65,14 +63,12 @@
   .tab-panel{display:none}
   .tab-panel.active{display:block}
 
-  /* CARDS */
   .card{background:white;border:1px solid var(--g3);border-radius:14px;overflow:hidden;margin-bottom:20px;animation:fadeUp .4s ease backwards}
   @keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
   .card-header{padding:18px 20px 14px;border-bottom:1px solid var(--g3);display:flex;align-items:center;justify-content:space-between}
   .card-title{font-size:14px;font-weight:600;color:var(--txt);display:flex;align-items:center;gap:8px}
   .card-body{padding:20px}
 
-  /* KPIs */
   .kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:24px}
   .kpi-card{background:white;border:1px solid var(--g3);border-radius:14px;padding:20px;animation:fadeUp .4s ease backwards}
   .kpi-card:nth-child(1){animation-delay:.05s}.kpi-card:nth-child(2){animation-delay:.1s}.kpi-card:nth-child(3){animation-delay:.15s}.kpi-card:nth-child(4){animation-delay:.2s}
@@ -80,21 +76,17 @@
   .kpi-value{font-size:32px;font-weight:700;line-height:1;margin-bottom:6px;font-family:'DM Mono',monospace}
   .kpi-sub{font-size:12px;color:var(--g5)}
 
-  /* GRIDS */
   .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
   .grid-3-1{display:grid;grid-template-columns:2fr 1fr;gap:20px}
 
-  /* BUTTONS */
   .btn{padding:9px 18px;border-radius:8px;border:none;cursor:pointer;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;transition:all .2s}
   .btn-primary{background:var(--azul);color:white}.btn-primary:hover{background:var(--azul-m)}
   .btn-ghost{background:var(--g2);color:var(--g5);border:1px solid var(--g3)}.btn-ghost:hover{background:var(--g3);color:var(--txt)}
   .btn-danger{background:var(--rs);color:var(--rojo);border:1px solid #fca5a5}.btn-danger:hover{background:#fecaca}
-  .btn-success{background:var(--vs);color:#065f46;border:1px solid #6ee7b7}.btn-success:hover{background:#a7f3d0}
   .btn-download{background:linear-gradient(135deg,#7c3aed,#6d28d9);color:white;display:flex;align-items:center;gap:6px}.btn-download:hover{opacity:.9;transform:translateY(-1px)}
   .btn-sm{padding:6px 12px;font-size:12px}
   .btn-xs{padding:4px 10px;font-size:11px}
 
-  /* TABLA */
   .tabla{width:100%;border-collapse:collapse;font-size:13px}
   .tabla th{background:var(--g1);padding:10px 14px;text-align:left;font-size:11px;font-weight:600;color:var(--g5);text-transform:uppercase;letter-spacing:.5px;border-bottom:1px solid var(--g3)}
   .tabla td{padding:12px 14px;border-bottom:1px solid var(--g2);vertical-align:middle}
@@ -105,7 +97,6 @@
   .chip-media{background:#ede9fe;color:#5b21b6}.chip-ok{background:var(--vs);color:#065f46}
   .monto{font-family:'DM Mono',monospace}
 
-  /* UPLOAD */
   .upload-zone{border:2px dashed var(--g3);border-radius:12px;padding:24px 20px;text-align:center;cursor:pointer;transition:all .25s;background:var(--g1);position:relative;margin-bottom:12px}
   .upload-zone:hover{border-color:var(--celeste);background:#f0f7ff}
   .upload-zone.done{border-color:var(--verde);background:var(--vs)}
@@ -114,7 +105,6 @@
   .upload-zone h3{font-size:14px;font-weight:600;margin-bottom:4px}
   .upload-zone p{font-size:12px;color:var(--g5)}
 
-  /* CONCILIACION HEADER */
   .conc-header{background:linear-gradient(135deg,var(--azul-o),var(--azul));border-radius:14px;padding:24px;color:white;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
   .conc-stats{display:flex;gap:28px}
   .conc-stat .val{font-family:'DM Mono',monospace;font-size:30px;font-weight:500;display:block}
@@ -123,7 +113,6 @@
   .run-btn:hover:not(:disabled){transform:scale(1.02);box-shadow:0 4px 20px rgba(0,0,0,.2)}
   .run-btn:disabled{opacity:.6;cursor:not-allowed}
 
-  /* CLIENTES */
   .cliente-row{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:12px;border:1px solid var(--g3);margin-bottom:10px;transition:all .2s}
   .cliente-row:hover{border-color:var(--celeste);background:var(--g1)}
   .cliente-avatar{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--celeste),var(--azul-m));display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;color:white;flex-shrink:0}
@@ -132,7 +121,6 @@
   .cliente-meta{font-size:12px;color:var(--g5);font-family:'DM Mono',monospace}
   .cliente-acciones{display:flex;gap:6px}
 
-  /* INPUTS */
   .input{width:100%;padding:11px 14px;border:1.5px solid var(--g3);border-radius:10px;font-family:'Outfit',sans-serif;font-size:14px;color:var(--txt);background:var(--g1);transition:border-color .2s}
   .input:focus{outline:none;border-color:var(--celeste);background:white}
   .input.error-border{border-color:var(--rojo)}
@@ -142,7 +130,6 @@
   .form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
   .form-full{margin-bottom:14px}
 
-  /* VENCIMIENTOS */
   .venc-item{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:10px;border:1px solid var(--g3);transition:all .2s;margin-bottom:8px}
   .venc-item:hover{border-color:var(--celeste);background:#f0f7ff}
   .venc-icon{font-size:18px;width:34px;height:34px;display:flex;align-items:center;justify-content:center;border-radius:8px;flex-shrink:0}
@@ -153,10 +140,8 @@
   .venc-dias{font-weight:700;font-family:'DM Mono',monospace;font-size:13px}
   .venc-dias.rojo{color:var(--rojo)}.venc-dias.amarillo{color:var(--amarillo)}.venc-dias.verde{color:var(--verde)}
 
-  /* MISC */
   .alerta{display:flex;align-items:center;gap:12px;padding:12px 16px;border-radius:10px;margin-bottom:10px;font-size:13px}
   .alerta-critica{background:var(--rs);border-left:3px solid var(--rojo)}
-  .alerta-warning{background:var(--as);border-left:3px solid var(--amarillo)}
   .alerta-texto{flex:1}
   .alerta-texto strong{display:block;font-weight:600}
   .alerta-texto span{font-size:12px;color:var(--g5)}
@@ -169,6 +154,7 @@
   .spinner-sm{width:14px;height:14px}
   .spinner-w{border-color:rgba(255,255,255,.3);border-top-color:white}
   @keyframes spin{to{transform:rotate(360deg)}}
+
   .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);backdrop-filter:blur(4px);z-index:200;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .3s}
   .modal-overlay.open{opacity:1;pointer-events:auto}
   .modal{background:white;border-radius:20px;padding:32px;max-width:480px;width:90%;transform:translateY(20px);transition:transform .3s;box-shadow:0 20px 60px rgba(0,0,0,.2);position:relative}
@@ -176,6 +162,7 @@
   .modal h3{font-family:'DM Serif Display',serif;font-size:22px;font-weight:400;margin-bottom:6px}
   .modal p{font-size:13px;color:var(--g5);margin-bottom:20px}
   .modal-close{position:absolute;top:16px;right:16px;background:var(--g2);border:none;border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:16px}
+
   .toast-wrap{position:fixed;bottom:24px;right:24px;display:flex;flex-direction:column;gap:8px;z-index:999}
   .toast{background:var(--azul-o);color:white;padding:12px 18px;border-radius:10px;font-size:13px;box-shadow:0 4px 20px rgba(0,0,0,.2);animation:toastIn .3s ease;max-width:320px}
   .toast.error{background:var(--rojo)}.toast.ok{background:#065f46}
@@ -185,7 +172,7 @@
 </head>
 <body>
 
-<!-- ══ LOGIN ══ -->
+<!-- LOGIN -->
 <div id="login-screen" class="login-screen">
   <div class="login-card">
     <div class="login-logo">
@@ -202,7 +189,7 @@
   </div>
 </div>
 
-<!-- ══ APP ══ -->
+<!-- APP -->
 <div id="app" class="app">
   <aside class="sidebar">
     <div class="sidebar-logo">
@@ -212,20 +199,7 @@
 
     <div class="periodo-select-wrap">
       <label>Período activo</label>
-      <select class="periodo-select" id="periodo-select" onchange="cambiarPeriodo(this.value)">
-  <option value="2026-01">Enero 2026</option>
-  <option value="2026-02">Febrero 2026</option>
-  <option value="2026-03">Marzo 2026</option>
-  <option value="2026-04" selected>Abril 2026</option>
-  <option value="2026-05">Mayo 2026</option>
-  <option value="2026-06">Junio 2026</option>
-  <option value="2026-07">Julio 2026</option>
-  <option value="2026-08">Agosto 2026</option>
-  <option value="2026-09">Septiembre 2026</option>
-  <option value="2026-10">Octubre 2026</option>
-  <option value="2026-11">Noviembre 2026</option>
-  <option value="2026-12">Diciembre 2026</option>
-</select>
+      <select class="periodo-select" id="periodo-select" onchange="cambiarPeriodo(this.value)"></select>
     </div>
 
     <nav class="nav">
@@ -241,10 +215,7 @@
     <div class="sidebar-footer">
       <div class="user-card">
         <div class="avatar">👩‍💼</div>
-        <div>
-          <p>Bienvenida</p>
-          <span>Estudio Contable</span>
-        </div>
+        <div><p>Bienvenida</p><span>Estudio Contable</span></div>
       </div>
       <button class="btn-salir" onclick="logout()">Salir</button>
     </div>
@@ -260,7 +231,7 @@
 
     <div class="content">
 
-      <!-- ══ DASHBOARD ══ -->
+      <!-- DASHBOARD -->
       <div class="tab-panel active" id="panel-dashboard">
         <div class="kpi-grid" id="kpis">
           <div class="kpi-card"><div class="loading-block"><div class="spinner"></div></div></div>
@@ -281,7 +252,7 @@
         </div>
       </div>
 
-      <!-- ══ CONCILIACION ══ -->
+      <!-- CONCILIACION -->
       <div class="tab-panel" id="panel-conciliacion">
         <div class="conc-header">
           <div>
@@ -313,15 +284,13 @@
           </div>
         </div>
         <div class="card" id="card-resultado" style="display:none">
-          <div class="card-header">
-            <span class="card-title">⚠️ Discrepancias encontradas</span>
-          </div>
+          <div class="card-header"><span class="card-title">⚠️ Discrepancias encontradas</span></div>
           <div style="overflow-x:auto" id="tabla-resultado"></div>
         </div>
         <div class="empty-state" id="empty-conc"><span class="es-i">🔍</span><p>Cargá los 3 archivos y ejecutá la conciliación</p></div>
       </div>
 
-      <!-- ══ VENCIMIENTOS ══ -->
+      <!-- VENCIMIENTOS -->
       <div class="tab-panel" id="panel-vencimientos">
         <div class="grid-2" style="margin-bottom:20px">
           <div class="card"><div class="card-header"><span class="card-title">🚨 Urgentes (≤5 días)</span></div><div class="card-body" style="padding:14px" id="venc-urgentes"><div class="loading-block"><div class="spinner"></div></div></div></div>
@@ -333,24 +302,20 @@
         </div>
       </div>
 
-      <!-- ══ REPORTES ══ -->
+      <!-- REPORTES -->
       <div class="tab-panel" id="panel-reportes">
         <div style="max-width:640px">
           <div style="background:linear-gradient(135deg,#4c1d95,#7c3aed);border-radius:16px;padding:28px;color:white;margin-bottom:24px">
             <h2 style="font-family:'DM Serif Display',serif;font-size:24px;font-weight:400;margin-bottom:6px">📤 Generar reporte para cliente</h2>
             <p style="font-size:13px;opacity:.7">Conciliá y descargá el Excel listo para mandarle al cliente por WhatsApp o mail</p>
           </div>
-
           <div class="card">
             <div class="card-header"><span class="card-title">1️⃣ Elegí el cliente</span></div>
             <div class="card-body">
               <label class="input-label">Cliente</label>
-              <select class="input" id="rep-cliente" style="appearance:none">
-                <option value="">— Seleccioná un cliente —</option>
-              </select>
+              <select class="input" id="rep-cliente" style="appearance:none"><option value="">— Seleccioná un cliente —</option></select>
             </div>
           </div>
-
           <div class="card">
             <div class="card-header"><span class="card-title">2️⃣ Cargá los archivos</span></div>
             <div class="card-body">
@@ -359,12 +324,10 @@
               <div class="upload-zone" id="rep-zone-excel"><span class="uz-e">📑</span><h3>Excel del cliente</h3><p>El Excel de control del cliente</p><input type="file" accept=".xlsx,.xls" onchange="selArchivoRep(this,'excel','rep-zone-excel')"></div>
             </div>
           </div>
-
           <button class="btn btn-download" style="width:100%;padding:16px;font-size:15px;border-radius:12px;justify-content:center" id="btn-generar-reporte" onclick="generarReporte()">
             <span id="rep-icon">⬇️</span>
             <span id="rep-text">Generar y descargar reporte Excel</span>
           </button>
-
           <div style="background:var(--g1);border-radius:12px;padding:16px;margin-top:16px;border:1px solid var(--g3)">
             <p style="font-size:13px;font-weight:600;margin-bottom:8px">💡 ¿Qué incluye el reporte?</p>
             <ul style="font-size:13px;color:var(--g5);padding-left:20px;display:flex;flex-direction:column;gap:4px">
@@ -376,7 +339,7 @@
         </div>
       </div>
 
-      <!-- ══ CLIENTES ══ -->
+      <!-- CLIENTES -->
       <div class="tab-panel" id="panel-clientes">
         <div class="grid-2">
           <div class="card">
@@ -384,11 +347,8 @@
               <span class="card-title">👥 Clientes registrados</span>
               <span class="chip chip-ok" id="total-clientes-badge">0</span>
             </div>
-            <div class="card-body" id="lista-clientes">
-              <div class="loading-block"><div class="spinner"></div></div>
-            </div>
+            <div class="card-body" id="lista-clientes"><div class="loading-block"><div class="spinner"></div></div></div>
           </div>
-
           <div class="card">
             <div class="card-header"><span class="card-title">➕ Agregar cliente</span></div>
             <div class="card-body">
@@ -409,14 +369,9 @@
                 </div>
               </div>
               <button class="btn btn-primary" style="width:100%;padding:12px" onclick="agregarCliente()">➕ Agregar cliente</button>
-
               <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--g3)">
-                <p style="font-size:12px;font-weight:600;color:var(--g5);margin-bottom:10px;text-transform:uppercase;letter-spacing:.5px">💡 ¿Para qué sirve el PIN?</p>
-                <p style="font-size:13px;color:var(--g5);line-height:1.6">
-                  El PIN es solo para identificar al cliente en el sistema. 
-                  Se lo podés mandar junto con el reporte, 
-                  o usarlo internamente para organizar los archivos de cada cliente.
-                </p>
+                <p style="font-size:12px;font-weight:600;color:var(--g5);margin-bottom:8px;text-transform:uppercase;letter-spacing:.5px">💡 ¿Para qué sirve el PIN?</p>
+                <p style="font-size:13px;color:var(--g5);line-height:1.6">Para identificar al cliente en el sistema. Podés mandárselo junto con el reporte o usarlo para organizar los archivos internamente.</p>
               </div>
             </div>
           </div>
@@ -463,15 +418,55 @@
 <div class="toast-wrap" id="toast-wrap"></div>
 
 <script>
-const API = 'https://web-production-59aa4.up.railway.app';
+// ── CONFIG ────────────────────────────────────────────────────
+const API = 'https://web-production-59aa4.up.railway.app'; // ← Tu URL de Railway
 let PW      = '';
-let PERIODO = '2026-04';
+let PERIODO = '';
 let archivos    = {ventas:null,compras:null,excel:null};
 let archivosRep = {ventas:null,compras:null,excel:null};
 
-// ══════════════════════════════════════════════════════════════
-// LOGIN
-// ══════════════════════════════════════════════════════════════
+// ── PERÍODOS AUTOMÁTICOS ──────────────────────────────────────
+// Genera los períodos del año actual y el siguiente automáticamente.
+// No hay que tocar nada cuando cambia el año.
+function generarPeriodos() {
+  const hoy    = new Date();
+  const anioActual = hoy.getFullYear();
+  const mesActual  = hoy.getMonth() + 1; // 1-12
+  const meses  = ['Enero','Febrero','Marzo','Abril','Mayo','Junio',
+                   'Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre'];
+  const sel    = document.getElementById('periodo-select');
+  sel.innerHTML = '';
+
+  // Mostrar desde 3 meses atrás hasta 3 meses adelante del año siguiente
+  const anios = [anioActual - 1, anioActual, anioActual + 1];
+
+  anios.forEach(anio => {
+    meses.forEach((mes, idx) => {
+      const numMes = idx + 1;
+      const valor  = `${anio}-${String(numMes).padStart(2,'0')}`;
+      const opt    = document.createElement('option');
+      opt.value    = valor;
+      opt.textContent = `${mes} ${anio}`;
+      // Seleccionar el mes actual por defecto
+      if (anio === anioActual && numMes === mesActual) {
+        opt.selected = true;
+        PERIODO = valor;
+      }
+      sel.appendChild(opt);
+    });
+  });
+
+  // Si no se seleccionó ninguno (no debería pasar), usar el primero
+  if (!PERIODO) {
+    PERIODO = sel.options[0]?.value || `${anioActual}-01`;
+    sel.value = PERIODO;
+  }
+
+  // Hacer scroll al mes actual en el select
+  sel.selectedIndex = Math.max(0, sel.selectedIndex);
+}
+
+// ── LOGIN ─────────────────────────────────────────────────────
 async function doLogin() {
   const pw  = document.getElementById('login-pw').value;
   const err = document.getElementById('login-error');
@@ -486,12 +481,16 @@ async function doLogin() {
     PW = pw;
     iniciarApp();
   } catch(e) {
-    err.textContent = e.message.includes('fetch') ? 'No se puede conectar al servidor. ¿Está corriendo uvicorn?' : 'Contraseña incorrecta.';
+    err.textContent = e.message.includes('fetch')
+      ? 'No se puede conectar al servidor.'
+      : 'Contraseña incorrecta.';
     err.style.display='block'; btn.disabled=false; btn.innerHTML='Ingresar →';
   }
 }
 
-document.addEventListener('keydown', e => { if(e.key==='Enter' && document.getElementById('login-screen').style.display!=='none') doLogin(); });
+document.addEventListener('keydown', e => {
+  if (e.key==='Enter' && document.getElementById('login-screen').style.display!=='none') doLogin();
+});
 
 function logout() {
   PW=''; archivos={ventas:null,compras:null,excel:null}; archivosRep={ventas:null,compras:null,excel:null};
@@ -508,48 +507,41 @@ function iniciarApp() {
   cargarDashboard();
 }
 
-// ══════════════════════════════════════════════════════════════
-// PERIODO
-// ══════════════════════════════════════════════════════════════
+// ── PERÍODO ───────────────────────────────────────────────────
 function cambiarPeriodo(p) {
   PERIODO = p;
-  showToast(`📅 Período cambiado a ${p}`);
-  const panelActivo = document.querySelector('.tab-panel.active')?.id?.replace('panel-','');
-  if (panelActivo==='dashboard')    cargarDashboard();
-  if (panelActivo==='vencimientos') cargarVencimientos();
+  showToast(`📅 Período: ${p}`);
+  const panel = document.querySelector('.tab-panel.active')?.id?.replace('panel-','');
+  if (panel==='dashboard')    cargarDashboard();
+  if (panel==='vencimientos') cargarVencimientos();
 }
 
-// ══════════════════════════════════════════════════════════════
-// DASHBOARD
-// ══════════════════════════════════════════════════════════════
+// ── DASHBOARD ─────────────────────────────────────────────────
 async function cargarDashboard() {
-  document.getElementById('page-sub').textContent = `Período ${PERIODO} · Bienvenida`;
+  document.getElementById('page-sub').textContent = `Período ${PERIODO}`;
   try {
     const [cRes, vRes] = await Promise.all([
       fetch(`${API}/api/clientes?password=${encodeURIComponent(PW)}`).catch(()=>null),
       fetch(`${API}/api/vencimientos/${PERIODO}?password=${encodeURIComponent(PW)}`).catch(()=>null),
     ]);
     const clientes = cRes&&cRes.ok ? await cRes.json() : {clientes:[],total:0};
-    const venc     = vRes&&vRes.ok ? await vRes.json() : mockVenc();
+    const venc     = vRes&&vRes.ok ? await vRes.json() : {vencimientos:[]};
     renderKPIs(clientes, venc);
     renderAlertasDash(venc.vencimientos||[]);
     renderDashClientes(clientes.clientes||[]);
     renderMiniVenc(venc.vencimientos||[]);
-    const urg = (venc.vencimientos||[]).filter(v=>v.dias_restantes<=2).length;
-    if (urg>0) { document.getElementById('badge-venc').textContent=urg; document.getElementById('badge-venc').style.display=''; }
+    const urg = (venc.vencimientos||[]).filter(v=>v.dias_restantes<=2&&!v.vencido).length;
+    const badgeVenc = document.getElementById('badge-venc');
+    if (urg>0) { badgeVenc.textContent=urg; badgeVenc.style.display=''; }
+    else { badgeVenc.style.display='none'; }
     actualizarSelectReporte(clientes.clientes||[]);
-  } catch(e) {
-    renderKPIs({total:0,clientes:[]}, mockVenc());
-    renderAlertasDash(mockVenc().vencimientos);
-    renderDashClientes([]);
-    renderMiniVenc(mockVenc().vencimientos);
-  }
+  } catch(e) { console.warn(e); }
 }
 
 function renderKPIs(clientes, venc) {
   const total = clientes.total||0;
-  const urg   = (venc.vencimientos||[]).filter(v=>v.dias_restantes<=2).length;
-  const prox  = (venc.vencimientos||[]).filter(v=>v.dias_restantes<=7).length;
+  const urg   = (venc.vencimientos||[]).filter(v=>v.dias_restantes<=2&&!v.vencido).length;
+  const prox  = (venc.vencimientos||[]).filter(v=>v.dias_restantes<=7&&!v.vencido).length;
   document.getElementById('kpis').innerHTML = `
     <div class="kpi-card"><p class="kpi-label">Clientes registrados</p><p class="kpi-value" style="color:var(--azul)">${total}</p><p class="kpi-sub">en el estudio</p></div>
     <div class="kpi-card"><p class="kpi-label">Vencen esta semana</p><p class="kpi-value" style="color:var(--amarillo)">${prox}</p><p class="kpi-sub">próximos 7 días</p></div>
@@ -558,40 +550,45 @@ function renderKPIs(clientes, venc) {
 }
 
 function renderAlertasDash(vencimientos) {
-  const urg = vencimientos.filter(v=>v.dias_restantes<=2 && !v.vencido);
-  document.getElementById('alertas-wrap').innerHTML = urg.map(v=>`
-    <div class="alerta alerta-critica">
+  document.getElementById('alertas-wrap').innerHTML = vencimientos
+    .filter(v=>v.dias_restantes<=2&&!v.vencido)
+    .map(v=>`<div class="alerta alerta-critica">
       <span style="font-size:20px">⏰</span>
       <div class="alerta-texto"><strong>IVA vence en ${v.dias_restantes} día${v.dias_restantes!==1?'s':''} — ${v.nombre}</strong><span>Vencimiento: ${v.fecha_vencimiento} · CUIT ${v.cuit}</span></div>
-      <button class="btn btn-ghost btn-sm" onclick="ir('vencimientos',document.querySelector('.nav-item:nth-child(3)'))">Ver →</button>
+      <button class="btn btn-ghost btn-sm" onclick="ir('vencimientos',document.querySelectorAll('.nav-item')[2])">Ver →</button>
     </div>`).join('');
 }
 
 function renderDashClientes(clientes) {
   document.getElementById('dash-total-clientes').textContent = `${clientes.length} cliente${clientes.length!==1?'s':''}`;
   if (!clientes.length) {
-    document.getElementById('dash-clientes').innerHTML = `<div class="empty-state" style="padding:20px"><span class="es-i" style="font-size:32px">👥</span><p>No hay clientes todavía.<br><button class="btn btn-primary btn-sm" style="margin-top:10px" onclick="ir('clientes',document.querySelector('.nav-item:nth-child(5)'))">Agregar cliente</button></p></div>`;
+    document.getElementById('dash-clientes').innerHTML = `<div class="empty-state" style="padding:20px"><span class="es-i" style="font-size:32px">👥</span><p>No hay clientes todavía.<br><button class="btn btn-primary btn-sm" style="margin-top:10px" onclick="ir('clientes',document.querySelectorAll('.nav-item')[4])">Agregar cliente</button></p></div>`;
     return;
   }
-  document.getElementById('dash-clientes').innerHTML = clientes.slice(0,6).map(c=>{
+  document.getElementById('dash-clientes').innerHTML = clientes.slice(0,6).map(c => {
     const ini=c.nombre.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
     return `<div style="display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--g2)">
       <div style="width:36px;height:36px;border-radius:8px;background:linear-gradient(135deg,var(--celeste),var(--azul-m));display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:white;flex-shrink:0">${ini}</div>
       <div style="flex:1"><p style="font-size:13px;font-weight:600">${c.nombre}</p><p style="font-size:11px;color:var(--g5);font-family:'DM Mono',monospace">${c.cuit}</p></div>
-      <button class="btn btn-ghost btn-xs" onclick="ir('reportes',document.querySelector('.nav-item:nth-child(4)'));document.getElementById('rep-cliente').value='${c.id}'">📤 Reporte</button>
+      <button class="btn btn-ghost btn-xs" onclick="irAReporte('${c.id}')">📤 Reporte</button>
     </div>`;
   }).join('') + (clientes.length>6?`<p style="font-size:12px;color:var(--g5);text-align:center;margin-top:12px">y ${clientes.length-6} más...</p>`:'');
 }
 
-function renderMiniVenc(v) {
-  const el=document.getElementById('dash-venc-mini');
-  const filtrados=v.filter(x=>!x.vencido).slice(0,4);
-  el.innerHTML=filtrados.length?filtrados.map(x=>vencItem(x)).join(''):'<div class="empty-state" style="padding:16px"><span>✅</span><p>Sin vencimientos próximos</p></div>';
+function irAReporte(clienteId) {
+  ir('reportes', document.querySelectorAll('.nav-item')[3]);
+  setTimeout(() => { document.getElementById('rep-cliente').value = clienteId; }, 100);
 }
 
-// ══════════════════════════════════════════════════════════════
-// CONCILIACION
-// ══════════════════════════════════════════════════════════════
+function renderMiniVenc(v) {
+  const el = document.getElementById('dash-venc-mini');
+  const filtrados = v.filter(x=>!x.vencido).slice(0,4);
+  el.innerHTML = filtrados.length
+    ? filtrados.map(x=>vencItem(x)).join('')
+    : '<div class="empty-state" style="padding:16px"><span>✅</span><p>Sin vencimientos próximos</p></div>';
+}
+
+// ── CONCILIACION ──────────────────────────────────────────────
 function selArchivo(input,tipo,zoneId) {
   if (!input.files[0]) return;
   archivos[tipo]=input.files[0];
@@ -614,7 +611,7 @@ async function ejecutarConciliacion() {
     const res=await fetch(`${API}/api/conciliar`,{method:'POST',body:form});
     const data=await res.json(); if(!res.ok) throw new Error(data.detail);
     mostrarResultado(data);
-  } catch(e){mostrarResultado(mockConc());showToast('Modo demo',true);}
+  } catch(e){ showToast(`❌ ${e.message}`,true); }
   finally{document.getElementById('run-icon').textContent='✅';document.getElementById('run-text').textContent='Listo';btn.disabled=false;}
 }
 
@@ -634,9 +631,7 @@ function mostrarResultado(data) {
   showToast(`⚠️ ${lista.length} discrepancias`);
 }
 
-// ══════════════════════════════════════════════════════════════
-// REPORTES
-// ══════════════════════════════════════════════════════════════
+// ── REPORTES ──────────────────────────────────────────────────
 function selArchivoRep(input,tipo,zoneId) {
   if (!input.files[0]) return;
   archivosRep[tipo]=input.files[0];
@@ -670,31 +665,30 @@ async function generarReporte() {
     const blob=await res.blob();
     const url=URL.createObjectURL(blob);
     const a=document.createElement('a'); a.href=url;
-    a.download=res.headers.get('Content-Disposition')?.split('filename=')[1]||'reporte.xlsx';
+    a.download=res.headers.get('Content-Disposition')?.split('filename=')[1]||`reporte_${PERIODO}.xlsx`;
     a.click(); URL.revokeObjectURL(url);
-    showToast('✅ Reporte descargado — podés mandárselo al cliente','',true);
+    showToast('✅ Reporte descargado — mandáselo al cliente','','ok');
   } catch(e){showToast(`❌ ${e.message}`,true);}
   finally{document.getElementById('rep-icon').textContent='⬇️';document.getElementById('rep-text').textContent='Generar y descargar reporte Excel';btn.disabled=false;}
 }
 
-// ══════════════════════════════════════════════════════════════
-// VENCIMIENTOS
-// ══════════════════════════════════════════════════════════════
+// ── VENCIMIENTOS ──────────────────────────────────────────────
 async function cargarVencimientos() {
   document.getElementById('venc-periodo-titulo').textContent=PERIODO;
   try {
     const res=await fetch(`${API}/api/vencimientos/${PERIODO}?password=${encodeURIComponent(PW)}`).catch(()=>null);
-    renderVenc(res&&res.ok?await res.json():mockVenc());
-  } catch(e){renderVenc(mockVenc());}
+    if (res&&res.ok) renderVenc(await res.json());
+    else renderVenc({vencimientos:[]});
+  } catch(e){ renderVenc({vencimientos:[]}); }
 }
 
 function renderVenc(data) {
   const v=data.vencimientos||[];
-  const urg=v.filter(x=>x.dias_restantes<=5&&!x.vencido), sem=v.filter(x=>x.dias_restantes>5&&x.dias_restantes<=10&&!x.vencido);
+  const urg=v.filter(x=>x.dias_restantes<=5&&!x.vencido);
+  const sem=v.filter(x=>x.dias_restantes>5&&x.dias_restantes<=10&&!x.vencido);
   document.getElementById('venc-urgentes').innerHTML=urg.length?urg.map(x=>vencItem(x)).join(''):'<div class="empty-state" style="padding:16px"><span style="font-size:32px;display:block">✅</span><p>Sin urgentes</p></div>';
   document.getElementById('venc-semana').innerHTML=sem.length?sem.map(x=>vencItem(x)).join(''):'<div class="empty-state" style="padding:16px"><span style="font-size:32px;display:block">📅</span><p>Sin vencimientos esta semana</p></div>';
-  const f=v=>v==null?'—':v;
-  document.getElementById('tabla-venc').innerHTML=`<table class="tabla"><thead><tr><th>Cliente</th><th>CUIT</th><th>Concepto</th><th>Vencimiento</th><th>Días</th></tr></thead><tbody>${v.map(x=>`<tr><td style="font-weight:500">${x.nombre}</td><td style="font-family:'DM Mono',monospace;font-size:12px">${x.cuit}</td><td>${x.concepto}</td><td style="font-family:'DM Mono',monospace">${x.fecha_vencimiento}</td><td><span class="chip ${x.vencido?'chip-critica':x.dias_restantes<=2?'chip-critica':x.dias_restantes<=7?'chip-alta':'chip-media'}">${x.vencido?'VENCIDO':x.dias_restantes+'d'}</span></td></tr>`).join('')}</tbody></table>`;
+  document.getElementById('tabla-venc').innerHTML=v.length?`<table class="tabla"><thead><tr><th>Cliente</th><th>CUIT</th><th>Concepto</th><th>Vencimiento</th><th>Días</th></tr></thead><tbody>${v.map(x=>`<tr><td style="font-weight:500">${x.nombre}</td><td style="font-family:'DM Mono',monospace;font-size:12px">${x.cuit}</td><td>${x.concepto}</td><td style="font-family:'DM Mono',monospace">${x.fecha_vencimiento}</td><td><span class="chip ${x.vencido?'chip-critica':x.dias_restantes<=2?'chip-critica':x.dias_restantes<=7?'chip-alta':'chip-media'}">${x.vencido?'VENCIDO':x.dias_restantes+'d'}</span></td></tr>`).join('')}</tbody></table>`:'<div class="empty-state"><span class="es-i">📅</span><p>No hay clientes registrados todavía</p></div>';
 }
 
 function vencItem(v) {
@@ -702,9 +696,7 @@ function vencItem(v) {
   return `<div class="venc-item"><div class="venc-icon ${v.urgencia}">${e[v.urgencia]||'📅'}</div><div class="venc-info"><p class="venc-nombre">${v.nombre}</p><p class="venc-concepto">${v.concepto} · ${v.cuit}</p></div><div style="text-align:right"><p class="venc-dias ${v.urgencia}">${v.dias_restantes}d</p><p style="font-size:11px;color:var(--g5)">${v.fecha_vencimiento}</p></div></div>`;
 }
 
-// ══════════════════════════════════════════════════════════════
-// CLIENTES
-// ══════════════════════════════════════════════════════════════
+// ── CLIENTES ──────────────────────────────────────────────────
 async function cargarClientes() {
   document.getElementById('lista-clientes').innerHTML='<div class="loading-block"><div class="spinner"></div></div>';
   try {
@@ -815,15 +807,13 @@ function validarCuit(cuit) {
   return dv===parseInt(cuit[10]);
 }
 
-// ══════════════════════════════════════════════════════════════
-// NAVEGACIÓN
-// ══════════════════════════════════════════════════════════════
+// ── NAVEGACIÓN ────────────────────────────────────────────────
 const titulos={
-  dashboard:    ['Dashboard General',         `Resumen del estudio`],
-  conciliacion: ['Conciliación AFIP',         'Mis Comprobantes vs. Excel del cliente'],
-  vencimientos: ['Vencimientos Impositivos',  'IVA · IIBB · por terminación de CUIT'],
-  reportes:     ['Generar Reporte',           'Conciliá y descargá el Excel para mandarle al cliente'],
-  clientes:     ['Mis Clientes',              'Gestioná los clientes del estudio'],
+  dashboard:    ['Dashboard General',        'Resumen del estudio'],
+  conciliacion: ['Conciliación AFIP',        'Mis Comprobantes vs. Excel del cliente'],
+  vencimientos: ['Vencimientos Impositivos', 'IVA · IIBB · por terminación de CUIT'],
+  reportes:     ['Generar Reporte',          'Conciliá y descargá el Excel para mandarle al cliente'],
+  clientes:     ['Mis Clientes',             'Gestioná los clientes del estudio'],
 };
 
 function ir(panel,btn) {
@@ -838,29 +828,18 @@ function ir(panel,btn) {
   if (panel==='clientes')     cargarClientes();
 }
 
-// ══════════════════════════════════════════════════════════════
-// DEMO DATA
-// ══════════════════════════════════════════════════════════════
-function mockVenc(){
-  const h=new Date(), d=n=>{const f=new Date(h);f.setDate(f.getDate()+n);return f.toLocaleDateString('es-AR');};
-  return {vencimientos:[
-    {nombre:'López Tecnología SRL',cuit:'30-71234567-8',concepto:'IVA Abril 2025',fecha_vencimiento:d(2),dias_restantes:2,urgencia:'rojo',vencido:false},
-    {nombre:'García & Asociados',cuit:'33-56789012-9',concepto:'IVA Abril 2025',fecha_vencimiento:d(4),dias_restantes:4,urgencia:'rojo',vencido:false},
-    {nombre:'Tech Solutions SA',cuit:'30-45678901-3',concepto:'IVA Abril 2025',fecha_vencimiento:d(8),dias_restantes:8,urgencia:'amarillo',vencido:false},
-    {nombre:'Martínez Import.',cuit:'27-87654321-0',concepto:'IVA Abril 2025',fecha_vencimiento:d(14),dias_restantes:14,urgencia:'verde',vencido:false},
-  ]};
-}
-function mockConc(){return {stats:{total_afip:234,total_cliente:230,matcheados:226,discrepancias:4,criticas:2,altas:2},discrepancias:[{emoji:'🚨',tipo_alerta:'FALTANTE_AFIP',cuit:'30-71234567-8',descripcion:'En Excel pero no en AFIP',comprobante:'Factura B',total_afip:null,total_cliente:84200,prioridad:'CRITICA'},{emoji:'💰',tipo_alerta:'DIFERENCIA_MONTO',cuit:'30-45678901-3',descripcion:'Diferencia de $500',comprobante:'Factura A',total_afip:125000,total_cliente:124500,prioridad:'ALTA'}]};}
-
-// ══════════════════════════════════════════════════════════════
-// TOAST
-// ══════════════════════════════════════════════════════════════
+// ── TOAST ─────────────────────────────────────────────────────
 function showToast(msg,error=false,ok=false) {
   const t=document.createElement('div');
-  t.className='toast'+(error?' error':'')+(ok===true?' ok':'');
+  t.className='toast'+(error?' error':'')+(ok==='ok'?' ok':'');
   t.textContent=msg; document.getElementById('toast-wrap').appendChild(t);
   setTimeout(()=>t.remove(),3500);
 }
+
+// ── INIT ──────────────────────────────────────────────────────
+window.addEventListener('load', () => {
+  generarPeriodos(); // Genera los períodos automáticamente para el año actual
+});
 </script>
 </body>
 </html>
